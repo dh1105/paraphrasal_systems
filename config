@@ -1,0 +1,7 @@
+export ORIGINAL_QQP_FILE="data/quora_duplicate_questions.tsv"
+export PAWS_QQP_DIR="paws_qqp/"
+export PAWS_QQP_OUTPUT_DIR="paws_qqp/output/"
+
+python qqp_generate_data.py --original_qqp_input="${ORIGINAL_QQP_FILE}" --paws_input="${PAWS_QQP_DIR}/train.tsv" --paws_output="${PAWS_QQP_OUTPUT_DIR}/train.tsv"
+
+python qqp_generate_data.py --original_qqp_input="${ORIGINAL_QQP_FILE}" --paws_input="${PAWS_QQP_DIR}/dev_and_test.tsv" --paws_output="${PAWS_QQP_OUTPUT_DIR}/dev_and_test.tsv"
